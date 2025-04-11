@@ -63,8 +63,8 @@ This project implements a client that interacts with multiple MCP (Meta-Control 
 
     Create a `servers_config.json` file in the project's root directory.  This file should contain a JSON object with a `mcpServers` key. Each entry in `mcpServers` defines the configuration for an MCP server.  Here's an example:
 
-    ```json
-    {
+ ```json
+  {
     "mcpServers": {
       "sqlite": {
         "command": "uvx",
@@ -76,7 +76,7 @@ This project implements a client that interacts with multiple MCP (Meta-Control 
       }
     }
   }
-    ```
+  ```
 
     *   `command`: The command to execute to start the MCP server. This can be a full path, or a command available in your system's PATH (like `npx`).
     *   `args`: A list of arguments to pass to the command.
